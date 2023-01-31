@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Stephan Bisschop | Developer</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1>Stephan Bisschop</h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+            <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-text">
+                I'am Stephan Bisschop
+                <br>
+                Currently Second year Software Developer student at Vista College in Heerlen
+                <br>
+                Feel free to take a look
+            </p>
+            <h1>&#8595;</h1>
+        </div>
+    </section>
+
+    <!-- More abou -->
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <img src="foto/Mezelf.png" class="fotomezelf">
+        <p>
+            My Socials and GitHub are linked on the rightside of your screen on the hovering icons :)
+            <br>
+            Most other important information is found on there or can be found in my cv down below
+            <br>
+            CV
+            &#8595;
+        </p>
+        <p>
+            Click here to download &#8594; <a href="Bijlages/Stephanpdf" download="Stephan.pdf">StephanCV.PDF</a>
+            <br>
+            Or click here to view the cv in the browser &#8594; <a href="Pag3.html" target="_blank">Click Here</a>
+        </p>
+
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="icons/icons8-html-5.svg" alt="HTML" loading="lazy" class="icon icon-card" />
+                <img src="icons/icons8-css3.svg" alt="CSS" loading="lazy" class="icon icon-card" />
+                <img src="icons/icons8-javascript.svg" alt="JS" loading="lazy" class="icon icon-card" />
+            </div>
+
+            <div class="second-set animate__animated animate__pulse">
+                <img src="icons/icons8-c-sharp-logo-50.png" alt="C#" loading="lazy" class="icon icon-card" />
+                <img src="icons/icons8-mysql.png" alt="MySQL" loading="lazy" class="icon icon-card" />
+                <img src="icons/icons8-git.svg" alt="GitHub" loading="lazy" class="icon icon-card" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="foto/calculator.png" alt="Calculator" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Calculator C#</h3>
+                <p class="project-details">
+                    Schoolproject based in C# Calculator with basic funtions
+                </p>
+                <a href="https://github.com/Dark045NL/Calculator" target="Github calculator" class="project-link">Check
+                    it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="foto/drank.png" alt="Drank Automaat" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Drank Automaat</h3>
+                <p class="project-details">
+                    Schoolproject vendingmachine made in C#
+                </p>
+                <a href="https://github.com/Dark045NL/Drankenautomaat" target="Github Drank Automaat"
+                    class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <img src="foto/record.png" alt="Database Interface" loading="lazy" class="project-pic" />
+                <h3 class="project-title">Database Interface</h3>
+                <p class="project-details">
+                    Database interface for phpmyadmin able crud and view the whole database made with node.js and
+                    express
+                </p>
+                <a href="https://github.com/Dark045NL/Database-interface" target="Database Interface"
+                    class="project-link">Check it Out</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xrgjeoor" method="POST">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name"
+                            class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email"
+                            class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+                            class="input-field" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+        <a href="https://twitter.com/Dark0457" target="Twitter"><img src="icons/icons8-twitter-circled.gif"
+                alt="Twitter" loading="lazy" class="socicon" /></a>
+        <a href="https://www.instagram.com/_stephan.b_/" target="Instagram"><img src="icons/icons8-instagram.gif"
+                alt="Instagram" loading="lazy" class="socicon" /></a>
+        <a href="https://www.linkedin.com/in/stephan-bisschop-00a5761b9/" target="Linkedin"><img
+                src="icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" /></a>
+        <a href="https://github.com/Dark045NL" target="Github"><img src="icons/icons8-github.gif" alt="Github"
+                class="socicon" /></a>
+    </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"><img src="icons/icons8-upward-arrow.gif" class="socicon up-arrow" alt="" /></i>
+
+    <!-- Footer section -->
+    <footer>
+        <audio src="music/Wide.mp3" autoplay>
+            <p>If you are reading this, it is because your browser does not support the audio element. </p>
+            <embed src="music/Wide.mp3" width="180" height="90" hidden="true" />
+        </audio>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <div class="Hiddenlink">
+        <a href="Page2.html" target="_blank">This is a link</a>
+    </div>
+</body>
+
+
+</html>
